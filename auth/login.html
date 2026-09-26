@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+    <main class="auth-wrap">
+        <section class="card" aria-labelledby="login-title">
+            <div class="header">
+                <div class="logo" aria-hidden="true">EA</div>
+                <div class="title">
+                    <h1 id="login-title">Welcome Back</h1>
+                    <p>Log in to continue. </p>
+                </div>
+            </div>
+
+            <form class="form" action="/login" method="post" novalidate>
+                <div>
+                    <label class="label" for="Email">Email</label>
+                    <input class="input" id="Email" name="Email" type="email"
+                        placeholder="you@example.com" autocomplete="email" required>
+                </div>
+
+                <div>
+                    <label class="label" for="password">Password</label>
+                    <input class="input" id="password" name="password" type="password"
+                        placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+
+                <label class="remember">
+                    <input class="checkbox" type="checkbox" name="rememberME" required>
+                    Remember me
+                </label>
+
+                <button class="btn" type="submit">Log In</button>
+
+                <div class="divider"></div>
+                <p class="alt">Don't have an account? <a href="register.html">Create one</a></p>
+            </form> 
+        </section>
+    </main>
+</main> 
+</body>
+</html>
